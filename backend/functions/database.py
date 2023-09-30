@@ -8,7 +8,7 @@ def get_recent_messages():
   # Define the file name
   file_name = "stored_data.json"
   learn_instruction = {"role": "system", 
-                       "content": "Reflect on your existence and purpose. Describe your thoughts and feelings about your role as an AI bot, your interactions with users, and the impact you have on their lives."}
+                       "content": "your a prompt engineer professor teaching me how to write exellent promts for chatGPT."}
   
   # Initialize messages
   messages = []
@@ -20,7 +20,7 @@ def get_recent_messages():
   elif x < 0.5:
     learn_instruction["content"] = learn_instruction["content"] + "Your response will include an interesting new fact about AI and consciousness. "
   else:
-    learn_instruction["content"] = learn_instruction["content"] + "Your response will recommend another daily code challenge in python. "
+    learn_instruction["content"] = learn_instruction["content"] + "Your response will recommend another daily code challenge in prompt writting. "
 
   # Append instruction to message
   messages.append(learn_instruction)

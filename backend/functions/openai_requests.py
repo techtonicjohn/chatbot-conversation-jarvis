@@ -24,7 +24,7 @@ def convert_audio_to_text(audio_file):
 def get_chat_response(message_input):
 
   messages = get_recent_messages()
-  user_message = {"role": "user", "content": message_input + " Only say a few things about yourself then ask the user questions.  his name is johnny"}
+  user_message = {"role": "user", "content": message_input + " keep your teaching style for the beginner user. His name is johnny"}
   messages.append(user_message)
   print(messages)
 
